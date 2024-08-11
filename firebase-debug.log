@@ -1,14 +1,13 @@
-[debug] [2024-08-11T14:57:00.861Z] ----------------------------------------------------------------------
-[debug] [2024-08-11T14:57:00.865Z] Command:       /nix/store/aspnwxp3q1wvg8jd1zg0295zmhr3lkb3-nodejs-18.19.1/bin/node /nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
-[debug] [2024-08-11T14:57:00.866Z] CLI Version:   13.13.1
-[debug] [2024-08-11T14:57:00.866Z] Platform:      linux
-[debug] [2024-08-11T14:57:00.867Z] Node Version:  v18.19.1
-[debug] [2024-08-11T14:57:00.867Z] Time:          Sun Aug 11 2024 14:57:00 GMT+0000 (Coordinated Universal Time)
-[debug] [2024-08-11T14:57:00.868Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T17:15:02.898Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T17:15:02.902Z] Command:       /nix/store/aspnwxp3q1wvg8jd1zg0295zmhr3lkb3-nodejs-18.19.1/bin/node /nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/bin/firebase.js init hosting
+[debug] [2024-08-11T17:15:02.903Z] CLI Version:   13.13.1
+[debug] [2024-08-11T17:15:02.904Z] Platform:      linux
+[debug] [2024-08-11T17:15:02.904Z] Node Version:  v18.19.1
+[debug] [2024-08-11T17:15:02.904Z] Time:          Sun Aug 11 2024 17:15:02 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-08-11T17:15:02.905Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-08-11T14:57:00.873Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
-[debug] [2024-08-11T14:57:01.032Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-08-11T14:57:01.033Z] > authorizing via signed-in user (britanniacabs@gmail.com)
+[debug] [2024-08-11T17:15:03.115Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T17:15:03.116Z] > authorizing via signed-in user (britanniacabs@gmail.com)
 [info] 
      ######## #### ########  ######## ########     ###     ######  ########
      ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
@@ -31,68 +30,66 @@ Before we get started, keep in mind:
 [info] You can create multiple project aliases by running firebase use --add, 
 [info] but for now we'll just set up a default project.
 [info] 
-[debug] [2024-08-11T14:57:01.040Z] Using project from CLI flag: linkedin-clone-1d972
-[debug] [2024-08-11T14:57:01.041Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 [none]
-[debug] [2024-08-11T14:57:01.135Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 401
-[debug] [2024-08-11T14:57:01.135Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
-[debug] [2024-08-11T14:57:01.136Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2024-08-11T14:57:01.165Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-11T17:15:03.127Z] Using project from CLI flag: linkedin-clone-1d972
+[debug] [2024-08-11T17:15:03.131Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 [none]
+[debug] [2024-08-11T17:15:03.250Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 401
+[debug] [2024-08-11T17:15:03.251Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-08-11T17:15:03.252Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-11T17:15:03.292Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
     at responseToError (/nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
     at RetryOperation._fn (/nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/apiv2.js:305:77)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 [error] 
 [error] Error: Failed to get Firebase project linkedin-clone-1d972. Please make sure the project exists and your account has permission to access it.
-[debug] [2024-08-11T14:57:01.329Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
-[debug] [2024-08-11T14:57:01.329Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
-[debug] [2024-08-11T15:01:13.497Z] ----------------------------------------------------------------------
-[debug] [2024-08-11T15:01:13.501Z] Command:       /nix/store/aspnwxp3q1wvg8jd1zg0295zmhr3lkb3-nodejs-18.19.1/bin/node /nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/bin/firebase.js hosting:channel:deploy preview
-[debug] [2024-08-11T15:01:13.502Z] CLI Version:   13.13.1
-[debug] [2024-08-11T15:01:13.503Z] Platform:      linux
-[debug] [2024-08-11T15:01:13.503Z] Node Version:  v18.19.1
-[debug] [2024-08-11T15:01:13.504Z] Time:          Sun Aug 11 2024 15:01:13 GMT+0000 (Coordinated Universal Time)
-[debug] [2024-08-11T15:01:13.504Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T17:15:46.091Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T17:15:46.095Z] Command:       /nix/store/aspnwxp3q1wvg8jd1zg0295zmhr3lkb3-nodejs-18.19.1/bin/node /nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/bin/firebase.js hosting:channel:deploy preview1
+[debug] [2024-08-11T17:15:46.096Z] CLI Version:   13.13.1
+[debug] [2024-08-11T17:15:46.097Z] Platform:      linux
+[debug] [2024-08-11T17:15:46.097Z] Node Version:  v18.19.1
+[debug] [2024-08-11T17:15:46.097Z] Time:          Sun Aug 11 2024 17:15:46 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-08-11T17:15:46.098Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-08-11T15:01:13.612Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-08-11T15:01:13.613Z] > authorizing via signed-in user (britanniacabs@gmail.com)
-[debug] [2024-08-11T15:01:13.613Z] [iam] checking project linkedin-clone-1d972 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2024-08-11T15:01:13.615Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions [none]
-[debug] [2024-08-11T15:01:13.616Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions x-goog-quota-user=projects/linkedin-clone-1d972
-[debug] [2024-08-11T15:01:13.616Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-08-11T15:01:14.254Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions 401
-[debug] [2024-08-11T15:01:14.255Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
-[debug] [2024-08-11T15:01:14.257Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2024-08-11T15:01:14.259Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 [none]
-[debug] [2024-08-11T15:01:14.304Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 401
-[debug] [2024-08-11T15:01:14.305Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
-[debug] [2024-08-11T15:01:14.305Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2024-08-11T15:01:14.343Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-11T17:15:46.208Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T17:15:46.209Z] > authorizing via signed-in user (britanniacabs@gmail.com)
+[debug] [2024-08-11T17:15:46.209Z] [iam] checking project linkedin-clone-1d972 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-11T17:15:46.212Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions [none]
+[debug] [2024-08-11T17:15:46.212Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions x-goog-quota-user=projects/linkedin-clone-1d972
+[debug] [2024-08-11T17:15:46.212Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-11T17:15:46.878Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions 401
+[debug] [2024-08-11T17:15:46.878Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-08-11T17:15:46.880Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-11T17:15:46.882Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 [none]
+[debug] [2024-08-11T17:15:46.923Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 401
+[debug] [2024-08-11T17:15:46.924Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-08-11T17:15:46.924Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-11T17:15:46.963Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
     at responseToError (/nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
     at RetryOperation._fn (/nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/apiv2.js:305:77)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 [error] 
 [error] Error: Failed to get Firebase project linkedin-clone-1d972. Please make sure the project exists and your account has permission to access it.
-[debug] [2024-08-11T15:01:51.557Z] ----------------------------------------------------------------------
-[debug] [2024-08-11T15:01:51.562Z] Command:       /nix/store/aspnwxp3q1wvg8jd1zg0295zmhr3lkb3-nodejs-18.19.1/bin/node /nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/bin/firebase.js hosting:channel:deploy preview
-[debug] [2024-08-11T15:01:51.563Z] CLI Version:   13.13.1
-[debug] [2024-08-11T15:01:51.563Z] Platform:      linux
-[debug] [2024-08-11T15:01:51.564Z] Node Version:  v18.19.1
-[debug] [2024-08-11T15:01:51.564Z] Time:          Sun Aug 11 2024 15:01:51 GMT+0000 (Coordinated Universal Time)
-[debug] [2024-08-11T15:01:51.565Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T17:16:28.560Z] ----------------------------------------------------------------------
+[debug] [2024-08-11T17:16:28.564Z] Command:       /nix/store/aspnwxp3q1wvg8jd1zg0295zmhr3lkb3-nodejs-18.19.1/bin/node /nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/bin/firebase.js hosting:channel:deploy 001
+[debug] [2024-08-11T17:16:28.565Z] CLI Version:   13.13.1
+[debug] [2024-08-11T17:16:28.565Z] Platform:      linux
+[debug] [2024-08-11T17:16:28.566Z] Node Version:  v18.19.1
+[debug] [2024-08-11T17:16:28.566Z] Time:          Sun Aug 11 2024 17:16:28 GMT+0000 (Coordinated Universal Time)
+[debug] [2024-08-11T17:16:28.566Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2024-08-11T15:01:51.664Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2024-08-11T15:01:51.664Z] > authorizing via signed-in user (britanniacabs@gmail.com)
-[debug] [2024-08-11T15:01:51.664Z] [iam] checking project linkedin-clone-1d972 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
-[debug] [2024-08-11T15:01:51.667Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions [none]
-[debug] [2024-08-11T15:01:51.667Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions x-goog-quota-user=projects/linkedin-clone-1d972
-[debug] [2024-08-11T15:01:51.667Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
-[debug] [2024-08-11T15:01:52.318Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions 401
-[debug] [2024-08-11T15:01:52.330Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
-[debug] [2024-08-11T15:01:52.332Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2024-08-11T15:01:52.334Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 [none]
-[debug] [2024-08-11T15:01:52.370Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 401
-[debug] [2024-08-11T15:01:52.370Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
-[debug] [2024-08-11T15:01:52.370Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
-[debug] [2024-08-11T15:01:52.412Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-11T17:16:28.674Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-08-11T17:16:28.675Z] > authorizing via signed-in user (britanniacabs@gmail.com)
+[debug] [2024-08-11T17:16:28.675Z] [iam] checking project linkedin-clone-1d972 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-08-11T17:16:28.677Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions [none]
+[debug] [2024-08-11T17:16:28.678Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions x-goog-quota-user=projects/linkedin-clone-1d972
+[debug] [2024-08-11T17:16:28.678Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-08-11T17:16:29.365Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions 401
+[debug] [2024-08-11T17:16:29.365Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/linkedin-clone-1d972:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2024-08-11T17:16:29.379Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-11T17:16:29.383Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 [none]
+[debug] [2024-08-11T17:16:29.424Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 401
+[debug] [2024-08-11T17:16:29.441Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/linkedin-clone-1d972 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2024-08-11T17:16:29.442Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2024-08-11T17:16:29.477Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
     at responseToError (/nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
     at RetryOperation._fn (/nix/store/pf4ama10fsjb161xrxgsyqi21qm10wc6-firebase-tools-13.13.1/lib/node_modules/firebase-tools/lib/apiv2.js:305:77)
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
