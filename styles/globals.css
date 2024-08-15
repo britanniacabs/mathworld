@@ -1,33 +1,68 @@
+/* src/globals.css */
+
+/* Import Tailwind CSS utilities */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Global Styles for All Devices */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f7fafc;
+  @apply text-gray-800;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* Responsive Typography */
+h1 {
+  @apply text-xl font-bold; /* Default for mobile */
+}
+@media (min-width: 640px) {
+  h1 {
+    @apply text-2xl; /* Adjust for small screens */
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    @apply text-3xl; /* Adjust for medium screens */
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    @apply text-4xl; /* Adjust for large screens */
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Responsive Container Padding */
+.container {
+  @apply p-4; /* Default for mobile */
+}
+@media (min-width: 640px) {
+  .container {
+    @apply p-6; /* Adjust for small screens */
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    @apply p-8; /* Adjust for medium screens */
+  }
+}
+@media (min-width: 1024px) {
+  .container {
+    @apply p-12; /* Adjust for large screens */
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Responsive Button Styles */
+.button {
+  @apply w-full bg-blue-500 text-white py-2 px-4 rounded text-sm; /* Default for mobile */
+}
+@media (min-width: 640px) {
+  .button {
+    @apply w-auto text-base; /* Adjust for small screens */
+  }
+}
+@media (min-width: 768px) {
+  .button {
+    @apply text-lg; /* Adjust for medium screens */
   }
 }
